@@ -9,8 +9,8 @@ var atualizaDados = function(){
         var preco = parseFloat(conteudo);
         total += preco;
     }
-    $("#valor-total").text(total);
-    $("#quantidade-de-itens").text(items.length);
+    $(".valor-total").text(total);
+    $(".quantidade-de-itens").text(items.length);
 };
 var removeItem = function(event) {
     event.preventDefault();
@@ -20,7 +20,7 @@ var removeItem = function(event) {
 };
 var aposInicializado = function() {
     $(".remove-item").click(removeItem);
-    $("#undo").click(undo);
+    $(".undo").click(undo);
     atualizaDados();
 };
 
